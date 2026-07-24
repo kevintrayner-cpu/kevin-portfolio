@@ -10,9 +10,9 @@ window.PORTFOLIO_CONTENT = {
   profile: {
     name: "Kevin Trayner",
     role: "Principal Experience Designer",
-    resumeHref: "../_Kevin Trayner current resume.pdf",
+    resumeHref: "kevin-trayner-resume.pdf",
     email: "kevinctrayner@gmail.com",
-    linkedin: "https://www.linkedin.com",
+    linkedin: "https://www.linkedin.com/in/kevin-trayner-2031333/",
     scheduleLink: "#contact",
   },
   nav: [

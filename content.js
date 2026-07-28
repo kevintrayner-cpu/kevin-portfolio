@@ -112,7 +112,7 @@ window.PORTFOLIO_CONTENT = {
       "role": "Lead UX Designer",
       "timeline": "2021-2024",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",
-      "problem": "Customers faced complexity when choosing, comparing and configuring plans. The business needed a flexible architecture that was easy to understand and scale.",
+      "problem": "Customers faced complexity when choosing, comparing and configuring plans. The business needed a flexible architecture that could support new products and services.",
       "approach": [
         "Aligned product owners, research, branding and legal partners around a shared framing of customer choice needs.",
         "Translated value proposition work into experience flows that connected plan structure to customer mental models.",

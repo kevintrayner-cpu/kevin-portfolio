@@ -126,6 +126,10 @@ window.PORTFOLIO_CONTENT = {
         {
           "title": "Design for cross-channel consistency",
           "detail": "Defined shared interaction and content patterns that could translate across web, assisted, and retail touchpoints."
+        },
+        {
+          "title": "Pair Build Your Own with a Popular Plans shortcut",
+          "detail": "Push the new \"Build your own\" experience, but add a \"Popular plans\" option that would bundle together the core plans with popular services."
         }
       ],
       "outcomes": [
@@ -138,7 +142,7 @@ window.PORTFOLIO_CONTENT = {
       "title": "FCC Product Labels Across Experiences",
       "subtitle": "Implementing regulatory requirements across product ecosystems without degrading customer clarity.",
       "role": "Lead UX Designer / Principal Experience Designer",
-      "timeline": "2023-2024",
+      "timeline": "",
       "context": "FCC-mandated product labels required coordinated implementation across mobile and home product experiences.",
       "problem": "The team needed to satisfy compliance requirements while preserving usability, consistency, and trust across multiple channels.",
       "approach": [

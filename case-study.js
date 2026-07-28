@@ -13,7 +13,7 @@ function renderNotFound() {
     <p class="hero-copy">It may have moved. Head back to <a href="index.html#work">Selected Work</a> to browse available case studies.</p>
   `;
 
-  ['case-context', 'case-approach', 'case-decisions', 'case-outcomes', 'case-reflection'].forEach((id) => {
+  ['case-context', 'case-approach', 'case-decisions', 'case-outcomes'].forEach((id) => {
     const section = document.getElementById(id);
     if (section) section.remove();
   });
@@ -109,23 +109,9 @@ function renderCaseOutcomes(caseStudy, caseId) {
               `<li data-edit="caseStudies.${caseId}.outcomes[${index}]">${escapeHtml(item)}</li>`
           )
           .join('')}
+        <li data-edit="caseStudies.${caseId}.reflection">${richText(caseStudy.reflection)}</li>
       </ul>
     </div>
-  `;
-}
-
-function renderCaseReflection(caseStudy, caseId) {
-  const section = document.getElementById('case-reflection');
-  if (!section) return;
-
-  section.innerHTML = `
-    <div class="section-head">
-      <p class="section-kicker">Reflection</p>
-      <h2>Lessons carried into the next program.</h2>
-    </div>
-    <article class="about-card">
-      <p data-edit="caseStudies.${caseId}.reflection">${richText(caseStudy.reflection)}</p>
-    </article>
     <p style="margin-top: 1.5rem;"><a class="btn btn-text" href="index.html#work">&larr; Back to Selected Work</a></p>
   `;
 }
@@ -161,7 +147,6 @@ function init() {
   renderCaseApproach(caseStudy, caseId);
   renderCaseDecisions(caseStudy, caseId);
   renderCaseOutcomes(caseStudy, caseId);
-  renderCaseReflection(caseStudy, caseId);
   renderContact();
   renderFooter();
   setupReveal();

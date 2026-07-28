@@ -73,7 +73,7 @@ window.PORTFOLIO_CONTENT = {
         "title": "Verizon myPlan Experience",
         "challenge": "Led design for Verizon's myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
-          "Role: Lead UX Designer (2021-2024)",
+          "Role: Lead UX Designer",
           "Scope: Partnered across product owners, legal, retail, and research from value proposition through launch",
           "Impact: Introduced an industry-differentiating plan experience and clearer customer choice architecture"
         ],
@@ -97,7 +97,7 @@ window.PORTFOLIO_CONTENT = {
         "title": "End-to-End Mobile Plan Journey",
         "challenge": "As Principal Experience Designer, shaped end-to-end consumer activities for mobile plans while improving team process and design maturity.",
         "bullets": [
-          "Role: Principal Experience Designer (2024-Present)",
+          "Role: Principal Experience Designer",
           "Scope: Insight-led strategy, cross-disciplinary facilitation, mentoring, and design process evolution",
           "Impact: Stronger cross-functional alignment, clearer decision rationale, and more consistent execution"
         ],
@@ -110,7 +110,7 @@ window.PORTFOLIO_CONTENT = {
       "title": "Verizon myPlan Experience",
       "subtitle": "Reframing mobile plan selection to give customers more flexibility while supporting business differentiation.",
       "role": "Lead UX Designer",
-      "timeline": "2021-2024",
+      "timeline": "",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",
       "problem": "Customers faced complexity when choosing, comparing and configuring plans. The business needed a flexible architecture that could support new products and services.",
       "approach": [
@@ -130,8 +130,7 @@ window.PORTFOLIO_CONTENT = {
       ],
       "outcomes": [
         "Delivered an industry-differentiating plan experience centered on customer choice and flexibility.",
-        "Improved clarity of plan composition and customer decision confidence.",
-        "Created a repeatable collaboration model across business, legal, and delivery teams."
+        "Improved clarity of plan composition and customer decision confidence."
       ],
       "reflection": "This work reinforced the importance of simplifying plan architecture and offering customization. This work set the groundwork for the current [Simplicity plan](https://www.verizon.com/plans/unlimited/)."
     },

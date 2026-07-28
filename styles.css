@@ -474,6 +474,62 @@ h2 {
   }
 }
 
+.edit-mode-active [data-edit] {
+  cursor: text;
+  border-radius: 4px;
+}
+
+.edit-mode-active [data-edit]:hover,
+.edit-mode-active [data-edit]:focus {
+  outline: 1px dashed var(--accent);
+  outline-offset: 2px;
+}
+
+.edit-toolbar {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 0.8rem;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(31, 42, 47, 0.18);
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 0.85rem;
+}
+
+.edit-toolbar button {
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.4rem 0.8rem;
+  cursor: pointer;
+}
+
+.edit-toolbar button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.edit-toolbar .edit-toolbar-toggle {
+  background: var(--accent);
+  color: #fff;
+  border-color: transparent;
+}
+
+.edit-toolbar .edit-toolbar-status {
+  color: var(--muted);
+  max-width: 22ch;
+}
+
 @media (max-width: 760px) {
   .process-strip {
     grid-template-columns: 1fr;

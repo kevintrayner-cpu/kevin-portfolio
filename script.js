@@ -3,14 +3,14 @@ function renderHero() {
   if (!hero) return;
 
   hero.innerHTML = `
-    <p class="eyebrow">${escapeHtml(content.hero.eyebrow)}</p>
-    <h1>${escapeHtml(content.hero.headline)}</h1>
-    <p class="hero-copy">${escapeHtml(content.hero.subhead)}</p>
+    <p class="eyebrow" data-edit="hero.eyebrow">${escapeHtml(content.hero.eyebrow)}</p>
+    <h1 data-edit="hero.headline">${escapeHtml(content.hero.headline)}</h1>
+    <p class="hero-copy" data-edit="hero.subhead">${escapeHtml(content.hero.subhead)}</p>
     <div class="hero-cta">
-      <a class="btn btn-primary" href="${escapeHtml(content.hero.primaryCta.href)}">${escapeHtml(content.hero.primaryCta.label)}</a>
-      <a class="btn btn-text" href="${escapeHtml(content.hero.secondaryCta.href)}">${escapeHtml(content.hero.secondaryCta.label)}</a>
+      <a class="btn btn-primary" href="${escapeHtml(content.hero.primaryCta.href)}" data-edit="hero.primaryCta.label">${escapeHtml(content.hero.primaryCta.label)}</a>
+      <a class="btn btn-text" href="${escapeHtml(content.hero.secondaryCta.href)}" data-edit="hero.secondaryCta.label">${escapeHtml(content.hero.secondaryCta.label)}</a>
     </div>
-    <div class="hero-signal" role="note" aria-label="Positioning signal for hiring managers">${escapeHtml(content.hero.signal)}</div>
+    <div class="hero-signal" role="note" aria-label="Positioning signal for hiring managers" data-edit="hero.signal">${escapeHtml(content.hero.signal)}</div>
   `;
 }
 
@@ -20,10 +20,10 @@ function renderProofBar() {
 
   proofBar.innerHTML = content.proofStats
     .map(
-      (item) => `
+      (item, index) => `
       <article>
-        <p class="metric">${escapeHtml(item.metric)}</p>
-        <p class="label">${escapeHtml(item.label)}</p>
+        <p class="metric" data-edit="proofStats[${index}].metric">${escapeHtml(item.metric)}</p>
+        <p class="label" data-edit="proofStats[${index}].label">${escapeHtml(item.label)}</p>
       </article>
     `
     )
@@ -36,19 +36,24 @@ function renderWork() {
 
   work.innerHTML = `
     <div class="section-head">
-      <p class="section-kicker">${escapeHtml(content.work.kicker)}</p>
-      <h2>${escapeHtml(content.work.heading)}</h2>
+      <p class="section-kicker" data-edit="work.kicker">${escapeHtml(content.work.kicker)}</p>
+      <h2 data-edit="work.heading">${escapeHtml(content.work.heading)}</h2>
     </div>
     <div class="card-grid">
       ${content.work.cases
         .map(
-          (item) => `
+          (item, index) => `
           <article class="case-card">
-            <p class="case-tag">${escapeHtml(item.tag)}</p>
-            <h3>${escapeHtml(item.title)}</h3>
-            <p>${escapeHtml(item.challenge)}</p>
+            <p class="case-tag" data-edit="work.cases[${index}].tag">${escapeHtml(item.tag)}</p>
+            <h3 data-edit="work.cases[${index}].title">${escapeHtml(item.title)}</h3>
+            <p data-edit="work.cases[${index}].challenge">${escapeHtml(item.challenge)}</p>
             <ul>
-              ${item.bullets.map((bullet) => `<li>${escapeHtml(bullet)}</li>`).join('')}
+              ${item.bullets
+                .map(
+                  (bullet, bulletIndex) =>
+                    `<li data-edit="work.cases[${index}].bullets[${bulletIndex}]">${escapeHtml(bullet)}</li>`
+                )
+                .join('')}
             </ul>
             <a href="${escapeHtml(item.href)}">Read Case Study</a>
           </article>
@@ -75,20 +80,20 @@ function renderWorkingStyle() {
 
   section.innerHTML = `
     <div class="section-head">
-      <p class="section-kicker">${escapeHtml(content.workingStyle.kicker)}</p>
-      <h2>${escapeHtml(content.workingStyle.heading)}</h2>
-      <p class="section-intro">${escapeHtml(content.workingStyle.intro)}</p>
+      <p class="section-kicker" data-edit="workingStyle.kicker">${escapeHtml(content.workingStyle.kicker)}</p>
+      <h2 data-edit="workingStyle.heading">${escapeHtml(content.workingStyle.heading)}</h2>
+      <p class="section-intro" data-edit="workingStyle.intro">${escapeHtml(content.workingStyle.intro)}</p>
     </div>
     ${
       profileSignals.length
         ? `<div class="profile-signal-grid">
       ${profileSignals
         .map(
-          (item) => `
+          (item, index) => `
           <article class="profile-signal-card">
-            <p class="profile-signal-label">${escapeHtml(item.label)}</p>
-            <h3>${escapeHtml(item.value)}</h3>
-            <p>${escapeHtml(item.note)}</p>
+            <p class="profile-signal-label" data-edit="workingStyle.profileSignals[${index}].label">${escapeHtml(item.label)}</p>
+            <h3 data-edit="workingStyle.profileSignals[${index}].value">${escapeHtml(item.value)}</h3>
+            <p data-edit="workingStyle.profileSignals[${index}].note">${escapeHtml(item.note)}</p>
           </article>
         `
         )
@@ -101,7 +106,12 @@ function renderWorkingStyle() {
         ? `<div class="strengths-wrap" aria-label="Top strengths">
       <p class="strengths-title">Top CliftonStrengths</p>
       <div class="strength-chips">
-        ${topStrengths.map((strength) => `<span class="strength-chip">${escapeHtml(strength)}</span>`).join('')}
+        ${topStrengths
+          .map(
+            (strength, index) =>
+              `<span class="strength-chip" data-edit="workingStyle.topStrengths[${index}]">${escapeHtml(strength)}</span>`
+          )
+          .join('')}
       </div>
     </div>`
         : ''
@@ -109,10 +119,10 @@ function renderWorkingStyle() {
     <div class="leadership-grid leadership-grid-4">
       ${content.workingStyle.pillars
         .map(
-          (item) => `
+          (item, index) => `
           <article>
-            <h3>${escapeHtml(item.title)}</h3>
-            <p>${escapeHtml(item.body)}</p>
+            <h3 data-edit="workingStyle.pillars[${index}].title">${escapeHtml(item.title)}</h3>
+            <p data-edit="workingStyle.pillars[${index}].body">${escapeHtml(item.body)}</p>
           </article>
         `
         )
@@ -123,7 +133,12 @@ function renderWorkingStyle() {
         ? `<div class="working-notes">
       <h3>How This Shows Up In Collaboration</h3>
       <ul>
-        ${collaborationNotes.map((note) => `<li>${escapeHtml(note)}</li>`).join('')}
+        ${collaborationNotes
+          .map(
+            (note, index) =>
+              `<li data-edit="workingStyle.collaborationNotes[${index}]">${escapeHtml(note)}</li>`
+          )
+          .join('')}
       </ul>
     </div>`
         : ''
@@ -134,7 +149,7 @@ function renderWorkingStyle() {
           (step, index) => `
           <div class="process-step">
             <span class="process-number">${index + 1}</span>
-            <p>${escapeHtml(step)}</p>
+            <p data-edit="workingStyle.process[${index}]">${escapeHtml(step)}</p>
           </div>
         `
         )
@@ -155,10 +170,10 @@ function renderTestimonials() {
     <div class="writing-list">
       ${content.testimonials
         .map(
-          (item) => `
+          (item, index) => `
           <article class="testimonial-card">
-            <p class="testimonial-quote">${escapeHtml(item.quote)}</p>
-            <p class="testimonial-attribution">${escapeHtml(item.attribution)}</p>
+            <p class="testimonial-quote" data-edit="testimonials[${index}].quote">${escapeHtml(item.quote)}</p>
+            <p class="testimonial-attribution" data-edit="testimonials[${index}].attribution">${escapeHtml(item.attribution)}</p>
           </article>
         `
         )
@@ -173,16 +188,16 @@ function renderWriting() {
 
   section.innerHTML = `
     <div class="section-head">
-      <p class="section-kicker">${escapeHtml(content.writing.kicker)}</p>
-      <h2>${escapeHtml(content.writing.heading)}</h2>
+      <p class="section-kicker" data-edit="writing.kicker">${escapeHtml(content.writing.kicker)}</p>
+      <h2 data-edit="writing.heading">${escapeHtml(content.writing.heading)}</h2>
     </div>
     <div class="writing-list">
       ${content.writing.items
         .map(
-          (item) => `
+          (item, index) => `
           <article>
-            <h3>${escapeHtml(item.title)}</h3>
-            <p>${escapeHtml(item.summary)}</p>
+            <h3 data-edit="writing.items[${index}].title">${escapeHtml(item.title)}</h3>
+            <p data-edit="writing.items[${index}].summary">${escapeHtml(item.summary)}</p>
             <a href="${escapeHtml(item.href)}">View Item</a>
           </article>
         `
@@ -198,11 +213,11 @@ function renderAboutPreview() {
 
   section.innerHTML = `
     <div class="section-head">
-      <p class="section-kicker">${escapeHtml(content.aboutPreview.kicker)}</p>
+      <p class="section-kicker" data-edit="aboutPreview.kicker">${escapeHtml(content.aboutPreview.kicker)}</p>
       <h2>Principal-level perspective on product and experience leadership.</h2>
     </div>
     <article class="about-card">
-      <p>${escapeHtml(content.aboutPreview.body)}</p>
+      <p data-edit="aboutPreview.body">${escapeHtml(content.aboutPreview.body)}</p>
     </article>
   `;
 }

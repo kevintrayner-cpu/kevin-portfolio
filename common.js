@@ -29,12 +29,18 @@ function renderHeader(navBase = '') {
   const mainNav = document.getElementById('main-nav');
   const resumeLink = document.getElementById('resume-link');
 
-  if (brandName) brandName.textContent = content.profile.name;
+  if (brandName) {
+    brandName.textContent = content.profile.name;
+    brandName.setAttribute('data-edit', 'profile.name');
+  }
   if (resumeLink) resumeLink.setAttribute('href', content.profile.resumeHref);
 
   if (mainNav) {
     mainNav.innerHTML = content.nav
-      .map((item) => `<a href="${escapeHtml(navBase + item.href)}">${escapeHtml(item.label)}</a>`)
+      .map(
+        (item, index) =>
+          `<a href="${escapeHtml(navBase + item.href)}" data-edit="nav[${index}].label">${escapeHtml(item.label)}</a>`
+      )
       .join('');
   }
 }
@@ -44,14 +50,20 @@ function renderContact() {
   const heading = document.getElementById('contact-heading');
   const links = document.getElementById('contact-links');
 
-  if (kicker) kicker.textContent = content.contact.kicker;
-  if (heading) heading.textContent = content.contact.heading;
+  if (kicker) {
+    kicker.textContent = content.contact.kicker;
+    kicker.setAttribute('data-edit', 'contact.kicker');
+  }
+  if (heading) {
+    heading.textContent = content.contact.heading;
+    heading.setAttribute('data-edit', 'contact.heading');
+  }
 
   if (links) {
     links.innerHTML = `
-      <a class="btn btn-primary" href="mailto:${escapeHtml(content.profile.email)}">${escapeHtml(content.contact.emailLabel)}</a>
-      <a class="btn btn-ghost" href="${escapeHtml(content.profile.linkedin)}" target="_blank" rel="noreferrer">${escapeHtml(content.contact.linkedinLabel)}</a>
-      <a class="btn btn-text" href="${escapeHtml(content.profile.scheduleLink)}">${escapeHtml(content.contact.scheduleLabel)}</a>
+      <a class="btn btn-primary" href="mailto:${escapeHtml(content.profile.email)}" data-edit="contact.emailLabel">${escapeHtml(content.contact.emailLabel)}</a>
+      <a class="btn btn-ghost" href="${escapeHtml(content.profile.linkedin)}" target="_blank" rel="noreferrer" data-edit="contact.linkedinLabel">${escapeHtml(content.contact.linkedinLabel)}</a>
+      <a class="btn btn-text" href="${escapeHtml(content.profile.scheduleLink)}" data-edit="contact.scheduleLabel">${escapeHtml(content.contact.scheduleLabel)}</a>
     `;
   }
 }
@@ -60,8 +72,14 @@ function renderFooter() {
   const left = document.getElementById('footer-left');
   const right = document.getElementById('footer-right');
 
-  if (left) left.textContent = content.footer.left;
-  if (right) right.textContent = content.footer.right;
+  if (left) {
+    left.textContent = content.footer.left;
+    left.setAttribute('data-edit', 'footer.left');
+  }
+  if (right) {
+    right.textContent = content.footer.right;
+    right.setAttribute('data-edit', 'footer.right');
+  }
 }
 
 function setupReveal() {

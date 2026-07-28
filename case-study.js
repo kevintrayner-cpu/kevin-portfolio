@@ -19,34 +19,34 @@ function renderNotFound() {
   });
 }
 
-function renderCaseHero(caseStudy) {
+function renderCaseHero(caseStudy, caseId) {
   const hero = document.getElementById('case-hero');
   if (!hero) return;
 
   hero.innerHTML = `
     <p class="eyebrow">Case Study</p>
-    <h1>${escapeHtml(caseStudy.title)}</h1>
-    <p class="hero-copy">${escapeHtml(caseStudy.subtitle)}</p>
-    <div class="hero-signal" role="note" aria-label="Role and timeline">${escapeHtml(caseStudy.role)} &middot; ${escapeHtml(caseStudy.timeline)}</div>
+    <h1 data-edit="caseStudies.${caseId}.title">${escapeHtml(caseStudy.title)}</h1>
+    <p class="hero-copy" data-edit="caseStudies.${caseId}.subtitle">${escapeHtml(caseStudy.subtitle)}</p>
+    <div class="hero-signal" role="note" aria-label="Role and timeline"><span data-edit="caseStudies.${caseId}.role">${escapeHtml(caseStudy.role)}</span> &middot; <span data-edit="caseStudies.${caseId}.timeline">${escapeHtml(caseStudy.timeline)}</span></div>
   `;
 }
 
-function renderCaseContext(caseStudy) {
+function renderCaseContext(caseStudy, caseId) {
   const section = document.getElementById('case-context');
   if (!section) return;
 
   section.innerHTML = `
     <div class="section-head">
       <p class="section-kicker">Context</p>
-      <h2>${escapeHtml(caseStudy.context)}</h2>
+      <h2 data-edit="caseStudies.${caseId}.context">${escapeHtml(caseStudy.context)}</h2>
     </div>
     <article class="about-card">
-      <p>${escapeHtml(caseStudy.problem)}</p>
+      <p data-edit="caseStudies.${caseId}.problem">${escapeHtml(caseStudy.problem)}</p>
     </article>
   `;
 }
 
-function renderCaseApproach(caseStudy) {
+function renderCaseApproach(caseStudy, caseId) {
   const section = document.getElementById('case-approach');
   if (!section) return;
 
@@ -57,13 +57,18 @@ function renderCaseApproach(caseStudy) {
     </div>
     <div class="working-notes">
       <ul>
-        ${caseStudy.approach.map((step) => `<li>${escapeHtml(step)}</li>`).join('')}
+        ${caseStudy.approach
+          .map(
+            (step, index) =>
+              `<li data-edit="caseStudies.${caseId}.approach[${index}]">${escapeHtml(step)}</li>`
+          )
+          .join('')}
       </ul>
     </div>
   `;
 }
 
-function renderCaseDecisions(caseStudy) {
+function renderCaseDecisions(caseStudy, caseId) {
   const section = document.getElementById('case-decisions');
   if (!section) return;
 
@@ -75,10 +80,10 @@ function renderCaseDecisions(caseStudy) {
     <div class="leadership-grid">
       ${caseStudy.decisions
         .map(
-          (item) => `
+          (item, index) => `
           <article>
-            <h3>${escapeHtml(item.title)}</h3>
-            <p>${escapeHtml(item.detail)}</p>
+            <h3 data-edit="caseStudies.${caseId}.decisions[${index}].title">${escapeHtml(item.title)}</h3>
+            <p data-edit="caseStudies.${caseId}.decisions[${index}].detail">${escapeHtml(item.detail)}</p>
           </article>
         `
         )
@@ -87,7 +92,7 @@ function renderCaseDecisions(caseStudy) {
   `;
 }
 
-function renderCaseOutcomes(caseStudy) {
+function renderCaseOutcomes(caseStudy, caseId) {
   const section = document.getElementById('case-outcomes');
   if (!section) return;
 
@@ -98,13 +103,18 @@ function renderCaseOutcomes(caseStudy) {
     </div>
     <div class="working-notes">
       <ul>
-        ${caseStudy.outcomes.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}
+        ${caseStudy.outcomes
+          .map(
+            (item, index) =>
+              `<li data-edit="caseStudies.${caseId}.outcomes[${index}]">${escapeHtml(item)}</li>`
+          )
+          .join('')}
       </ul>
     </div>
   `;
 }
 
-function renderCaseReflection(caseStudy) {
+function renderCaseReflection(caseStudy, caseId) {
   const section = document.getElementById('case-reflection');
   if (!section) return;
 
@@ -114,7 +124,7 @@ function renderCaseReflection(caseStudy) {
       <h2>Lessons carried into the next program.</h2>
     </div>
     <article class="about-card">
-      <p>${escapeHtml(caseStudy.reflection)}</p>
+      <p data-edit="caseStudies.${caseId}.reflection">${escapeHtml(caseStudy.reflection)}</p>
     </article>
     <p style="margin-top: 1.5rem;"><a class="btn btn-text" href="index.html#work">&larr; Back to Selected Work</a></p>
   `;
@@ -146,12 +156,12 @@ function init() {
     caseStudy.title,
     caseStudy.subtitle
   );
-  renderCaseHero(caseStudy);
-  renderCaseContext(caseStudy);
-  renderCaseApproach(caseStudy);
-  renderCaseDecisions(caseStudy);
-  renderCaseOutcomes(caseStudy);
-  renderCaseReflection(caseStudy);
+  renderCaseHero(caseStudy, caseId);
+  renderCaseContext(caseStudy, caseId);
+  renderCaseApproach(caseStudy, caseId);
+  renderCaseDecisions(caseStudy, caseId);
+  renderCaseOutcomes(caseStudy, caseId);
+  renderCaseReflection(caseStudy, caseId);
   renderContact();
   renderFooter();
   setupReveal();

@@ -124,7 +124,7 @@ function renderCaseReflection(caseStudy, caseId) {
       <h2>Lessons carried into the next program.</h2>
     </div>
     <article class="about-card">
-      <p data-edit="caseStudies.${caseId}.reflection">${escapeHtml(caseStudy.reflection)}</p>
+      <p data-edit="caseStudies.${caseId}.reflection">${richText(caseStudy.reflection)}</p>
     </article>
     <p style="margin-top: 1.5rem;"><a class="btn btn-text" href="index.html#work">&larr; Back to Selected Work</a></p>
   `;

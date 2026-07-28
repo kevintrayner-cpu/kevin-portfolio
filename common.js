@@ -13,6 +13,17 @@ function escapeHtml(value) {
     .replaceAll("'", '&#39;');
 }
 
+// Like escapeHtml, but first converts Markdown-style links — [label](https://example.com)
+// — into real anchor tags. Everything else is still escaped, so this stays safe to use
+// with untrusted/plain content.js text. Use this instead of escapeHtml for fields where
+// an editor might want to link out to something (e.g. a case study reflection).
+function richText(value) {
+  return escapeHtml(value).replace(
+    /\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g,
+    '<a href="$2" target="_blank" rel="noreferrer">$1</a>'
+  );
+}
+
 function applySeo(title, description, ogTitle, ogDescription) {
   document.title = title;
   const metaDescription = document.querySelector('meta[name="description"]');

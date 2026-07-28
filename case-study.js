@@ -27,7 +27,7 @@ function renderCaseHero(caseStudy, caseId) {
     <p class="eyebrow">Case Study</p>
     <h1 data-edit="caseStudies.${caseId}.title">${escapeHtml(caseStudy.title)}</h1>
     <p class="hero-copy" data-edit="caseStudies.${caseId}.subtitle">${escapeHtml(caseStudy.subtitle)}</p>
-    <div class="hero-signal" role="note" aria-label="Role and timeline"><span data-edit="caseStudies.${caseId}.role">${escapeHtml(caseStudy.role)}</span> &middot; <span data-edit="caseStudies.${caseId}.timeline">${escapeHtml(caseStudy.timeline)}</span></div>
+    <div class="hero-signal" role="note" aria-label="Role and timeline"><span data-edit="caseStudies.${caseId}.role">${escapeHtml(caseStudy.role)}</span>${caseStudy.timeline ? ` &middot; <span data-edit="caseStudies.${caseId}.timeline">${escapeHtml(caseStudy.timeline)}</span>` : `<span data-edit="caseStudies.${caseId}.timeline" style="display:none">${escapeHtml(caseStudy.timeline)}</span>`}</div>
   `;
 }
 

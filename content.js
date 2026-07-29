@@ -122,7 +122,7 @@ window.PORTFOLIO_CONTENT = {
         {
           "src": "assets/case-studies/myplan/placeholder-1.svg",
           "alt": "Placeholder wireframe of the plan selection screen",
-          "caption": "Placeholder — plan selection wireframe"
+          "caption": "Concept for test - including perk with plan"
         },
         {
           "src": "assets/case-studies/myplan/placeholder-2.svg",
@@ -132,7 +132,7 @@ window.PORTFOLIO_CONTENT = {
         {
           "src": "assets/case-studies/myplan/placeholder-3.svg",
           "alt": "Placeholder wireframe of the mobile plan detail screen",
-          "caption": "Placeholder — mobile plan detail screen"
+          "caption": "Final mobile plan details"
         }
       ],
       "decisions": [
@@ -144,7 +144,7 @@ window.PORTFOLIO_CONTENT = {
           "title": "Focus on Build Your Own experience, but offer bundled options as well",
           "detail": "Push the new \"Build your own\" experience, but add a \"Popular plans\" option that would bundle together the core plans with popular services."
         },
-         {
+        {
           "title": "Design for cross-channel consistency",
           "detail": "Defined shared interaction and content patterns that could translate across web, assisted, and retail touchpoints and integrated into our design system."
         }

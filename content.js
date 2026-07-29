@@ -118,7 +118,23 @@ window.PORTFOLIO_CONTENT = {
         "Translated value prop work and customer research around high-value features into experience architecture that simplified customer choices and provided greater control",
         "Used iterative prototypes validated through market research, in conjunction with design critiques to reduce ambiguity prior to implementation."
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/case-studies/myplan/placeholder-1.svg",
+          "alt": "Placeholder wireframe of the plan selection screen",
+          "caption": "Placeholder — plan selection wireframe"
+        },
+        {
+          "src": "assets/case-studies/myplan/placeholder-2.svg",
+          "alt": "Placeholder diagram of the customer flow",
+          "caption": "Placeholder — customer flow diagram"
+        },
+        {
+          "src": "assets/case-studies/myplan/placeholder-3.svg",
+          "alt": "Placeholder wireframe of the mobile plan detail screen",
+          "caption": "Placeholder — mobile plan detail screen"
+        }
+      ],
       "decisions": [
         {
           "title": "Simplify choice architecture",

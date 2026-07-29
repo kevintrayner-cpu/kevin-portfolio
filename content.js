@@ -70,8 +70,8 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "myplan",
         "tag": "Growth",
-        "title": "Verizon myPlan Experience",
-        "challenge": "Led design for Verizon's myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
+        "title": "Mobile myPlan Experience",
+        "challenge": "Led design for myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
           "Role: Lead UX Designer",
           "Scope: Partnered across product owners, legal, retail, and research from value proposition through launch",
@@ -107,36 +107,37 @@ window.PORTFOLIO_CONTENT = {
   },
   "caseStudies": {
     "myplan": {
-      "title": "Verizon myPlan Experience",
+      "title": "Mobile myPlan Experience",
       "subtitle": "Reframing mobile plan selection to give customers more flexibility while supporting business differentiation.",
       "role": "Lead UX Designer",
       "timeline": "",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",
       "problem": "Customers faced complexity when choosing, comparing and configuring plans. The business needed a flexible architecture that could support new products and services.",
       "approach": [
-        "Aligned product owners, research, branding and legal partners around a shared framing of customer choice needs.",
-        "Translated value proposition work into experience flows that connected plan structure to customer mental models.",
-        "Used iterative prototypes and design critiques to reduce ambiguity before implementation."
+        "Aligned design, business and marketing to a \"radically simple\" vision of plans that focused on core features, with the ability to add other services.",
+        "Translated value prop work and customer research around high-value features into experience architecture that simplified customer choices and provided greater control",
+        "Used iterative prototypes validated through market research, in conjunction with design critiques to reduce ambiguity prior to implementation."
       ],
+      "images": [],
       "decisions": [
         {
           "title": "Simplify choice architecture",
           "detail": "Prioritized a simple, modular plan structure over bundling so customers had more choice and control."
         },
         {
-          "title": "Design for cross-channel consistency",
-          "detail": "Defined shared interaction and content patterns that could translate across web, assisted, and retail touchpoints."
-        },
-        {
-          "title": "Pair Build Your Own with a Popular Plans shortcut",
+          "title": "Focus on Build Your Own experience, but offer bundled options as well",
           "detail": "Push the new \"Build your own\" experience, but add a \"Popular plans\" option that would bundle together the core plans with popular services."
+        },
+         {
+          "title": "Design for cross-channel consistency",
+          "detail": "Defined shared interaction and content patterns that could translate across web, assisted, and retail touchpoints and integrated into our design system."
         }
       ],
       "outcomes": [
         "Delivered an industry-differentiating plan experience centered on customer choice and flexibility.",
         "Improved clarity of plan composition and customer decision confidence."
       ],
-      "reflection": "This work reinforced the importance of simplifying plan architecture and offering customization. This work set the groundwork for the current [Simplicity plan](https://www.verizon.com/plans/unlimited/)."
+      "reflection": "This work reinforced the importance of simplifying plan architecture and offering customization, and set the groundwork for the current Simplicity plan today."
     },
     "fcc-labels": {
       "title": "FCC Product Labels Across Experiences",
@@ -150,6 +151,7 @@ window.PORTFOLIO_CONTENT = {
         "Partnered closely with legal, product, and engineering to define practical patterns that could scale.",
         "Established shared guidance so teams could implement consistently across surfaces."
       ],
+      "images": [],
       "decisions": [
         {
           "title": "Standardize the label pattern",
@@ -179,6 +181,7 @@ window.PORTFOLIO_CONTENT = {
         "Facilitated cross-disciplinary problem-solving sessions that surfaced blockers and clarified decisions.",
         "Mentored designers and partners on design-led process, critique quality, and best-practice usage of shared systems."
       ],
+      "images": [],
       "decisions": [
         {
           "title": "Elevate decision transparency",
@@ -294,7 +297,7 @@ window.PORTFOLIO_CONTENT = {
   },
   "contact": {
     "kicker": "Contact",
-    "heading": "Building something complex? Let's make it clear and shippable.",
+    "heading": "Building an experience? Let's make it a story worth telling.",
     "emailLabel": "Email Me",
     "linkedinLabel": "LinkedIn",
     "scheduleLabel": "Schedule Call"

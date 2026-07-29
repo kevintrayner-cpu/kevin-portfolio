@@ -13,7 +13,7 @@ function renderNotFound() {
     <p class="hero-copy">It may have moved. Head back to <a href="index.html#work">Selected Work</a> to browse available case studies.</p>
   `;
 
-  ['case-context', 'case-approach', 'case-decisions', 'case-outcomes'].forEach((id) => {
+  ['case-context', 'case-gallery', 'case-approach', 'case-decisions', 'case-outcomes'].forEach((id) => {
     const section = document.getElementById(id);
     if (section) section.remove();
   });
@@ -44,6 +44,82 @@ function renderCaseContext(caseStudy, caseId) {
       <p data-edit="caseStudies.${caseId}.problem">${escapeHtml(caseStudy.problem)}</p>
     </article>
   `;
+}
+
+function renderCaseGallery(caseStudy, caseId) {
+  const section = document.getElementById('case-gallery');
+  if (!section) return;
+
+  const images = caseStudy.images || [];
+  if (images.length === 0) {
+    section.remove();
+    return;
+  }
+
+  section.innerHTML = `
+    <div class="section-head">
+      <p class="section-kicker">Artifacts</p>
+      <h2>Wireframes and visuals from the work.</h2>
+    </div>
+    <div class="case-gallery">
+      ${images
+        .map(
+          (image, index) => `
+          <figure class="case-gallery-item">
+            <button type="button" class="case-gallery-thumb" data-gallery-index="${index}">
+              <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || '')}" loading="lazy" />
+            </button>
+            ${image.caption ? `<figcaption>${escapeHtml(image.caption)}</figcaption>` : ''}
+          </figure>
+        `
+        )
+        .join('')}
+    </div>
+  `;
+
+  section.querySelectorAll('[data-gallery-index]').forEach((button) => {
+    button.addEventListener('click', () => {
+      const image = images[Number(button.dataset.galleryIndex)];
+      openLightbox(image);
+    });
+  });
+}
+
+function openLightbox(image) {
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  const caption = document.getElementById('lightbox-caption');
+  if (!lightbox || !img || !caption) return;
+
+  img.src = image.src;
+  img.alt = image.alt || '';
+  caption.textContent = image.caption || '';
+  lightbox.hidden = false;
+  document.body.classList.add('lightbox-open');
+}
+
+function closeLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  const img = document.getElementById('lightbox-img');
+  if (!lightbox) return;
+
+  lightbox.hidden = true;
+  document.body.classList.remove('lightbox-open');
+  if (img) img.src = '';
+}
+
+function setupLightbox() {
+  const lightbox = document.getElementById('lightbox');
+  const closeButton = document.getElementById('lightbox-close');
+  if (!lightbox || !closeButton) return;
+
+  closeButton.addEventListener('click', closeLightbox);
+  lightbox.addEventListener('click', (event) => {
+    if (event.target === lightbox) closeLightbox();
+  });
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && !lightbox.hidden) closeLightbox();
+  });
 }
 
 function renderCaseApproach(caseStudy, caseId) {
@@ -144,12 +220,14 @@ function init() {
   );
   renderCaseHero(caseStudy, caseId);
   renderCaseContext(caseStudy, caseId);
+  renderCaseGallery(caseStudy, caseId);
   renderCaseApproach(caseStudy, caseId);
   renderCaseDecisions(caseStudy, caseId);
   renderCaseOutcomes(caseStudy, caseId);
   renderContact();
   renderFooter();
   setupReveal();
+  setupLightbox();
 }
 
 init();

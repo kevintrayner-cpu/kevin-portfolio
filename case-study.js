@@ -69,7 +69,7 @@ function renderCaseGallery(caseStudy, caseId) {
             <button type="button" class="case-gallery-thumb" data-gallery-index="${index}">
               <img src="${escapeHtml(image.src)}" alt="${escapeHtml(image.alt || '')}" loading="lazy" />
             </button>
-            ${image.caption ? `<figcaption>${escapeHtml(image.caption)}</figcaption>` : ''}
+            <figcaption data-edit="caseStudies.${caseId}.images[${index}].caption">${escapeHtml(image.caption || '')}</figcaption>
           </figure>
         `
         )

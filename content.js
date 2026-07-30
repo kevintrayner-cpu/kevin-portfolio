@@ -122,16 +122,21 @@ window.PORTFOLIO_CONTENT = {
         {
           "src": "assets/case-studies/myplan/placeholder-1.svg",
           "alt": "Placeholder wireframe of the plan selection screen",
-          "caption": "Concept for test - including perk with plan"
+          "caption": "Storyboard for prospect journey"
         },
         {
           "src": "assets/case-studies/myplan/placeholder-2.svg",
           "alt": "Placeholder diagram of the customer flow",
-          "caption": "Placeholder — customer flow diagram"
+          "caption": "Test concept - including perk with plan"
         },
         {
           "src": "assets/case-studies/myplan/placeholder-3.svg",
           "alt": "Placeholder wireframe of the mobile plan detail screen",
+          "caption": "Early prototype combining bundled and build your own"
+        },
+        {
+          "src": "assets/case-studies/myplan/placeholder-4.svg",
+          "alt": "Placeholder layout comparing plan options side by side",
           "caption": "Final mobile plan details"
         }
       ],
@@ -141,8 +146,8 @@ window.PORTFOLIO_CONTENT = {
           "detail": "Prioritized a simple, modular plan structure over bundling so customers had more choice and control."
         },
         {
-          "title": "Focus on Build Your Own experience, but offer bundled options as well",
-          "detail": "Push the new \"Build your own\" experience, but add a \"Popular plans\" option that would bundle together the core plans with popular services."
+          "title": "Offer two paths: Bundled plans and Build Your Own",
+          "detail": "Offer both a \"Popular plans\" option that would bundle together the core plans with popular services; and a new build your own experience."
         },
         {
           "title": "Design for cross-channel consistency",
@@ -153,7 +158,7 @@ window.PORTFOLIO_CONTENT = {
         "Delivered an industry-differentiating plan experience centered on customer choice and flexibility.",
         "Improved clarity of plan composition and customer decision confidence."
       ],
-      "reflection": "This work reinforced the importance of simplifying plan architecture and offering customization, and set the groundwork for the current Simplicity plan today."
+      "reflection": "This work reinforced the importance of simplifying plan architecture and offering customization, and set the groundwork for the current [Simplicity plan](https://www.verizon.com/plans/unlimited/) today."
     },
     "fcc-labels": {
       "title": "FCC Product Labels Across Experiences",

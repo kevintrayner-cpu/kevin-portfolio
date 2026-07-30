@@ -80,18 +80,6 @@ window.PORTFOLIO_CONTENT = {
         "href": "case-study.html?case=myplan"
       },
       {
-        "id": "journey",
-        "tag": "Service Design",
-        "title": "End-to-End Mobile Plan Journey",
-        "challenge": "As Principal Experience Designer, shaped end-to-end consumer activities for mobile plans while improving team process and design maturity.",
-        "bullets": [
-          "Role: Principal Experience Designer",
-          "Scope: Insight-led strategy, cross-disciplinary facilitation, mentoring, and design process evolution",
-          "Impact: Stronger cross-functional alignment, clearer decision rationale, and more consistent execution"
-        ],
-        "href": "case-study.html?case=journey"
-      },
-      {
         "id": "fcc-labels",
         "tag": "Platform",
         "title": "FCC Product Labels Across Experiences",
@@ -102,6 +90,18 @@ window.PORTFOLIO_CONTENT = {
           "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
         ],
         "href": "case-study.html?case=fcc-labels"
+      },
+      {
+        "id": "satellite-to-device",
+        "tag": "Service Design",
+        "title": "Satellite to Device Experience",
+        "challenge": "Shaped the customer experience strategy for Verizon's Satellite to Device capability, building the cross-functional foundation to close coverage dead zones and support a beta launch.",
+        "bullets": [
+          "Role: Principal Experience Designer",
+          "Scope: Partnered with Experience Management, Value Proposition, and CMI research to shape the beta data collection journey and experience strategy",
+          "Impact: Built a trusted cross-functional partnership from scratch and became a recognized design leader on the initiative"
+        ],
+        "href": "case-study.html?case=satellite-to-device"
       }
     ]
   },
@@ -168,57 +168,104 @@ window.PORTFOLIO_CONTENT = {
       "context": "FCC-mandated product labels required coordinated implementation across mobile and home product experiences.",
       "problem": "The team needed to satisfy compliance requirements while preserving usability, consistency, and trust across multiple channels.",
       "approach": [
-        "Mapped where label requirements intersected with existing product journeys and content systems, across business units (incl Visible) and channels.",
-        "Partnered closely with legal, product, and engineering to define practical patterns that could scale.",
-        "Established shared guidance so teams could implement consistently across experiences."
+        "Mapped where label requirements intersected with existing product journeys and content systems, across business units (incl other Verizon business units like Visible, TracFone, etc] and channels.",
+        "Partnered closely with legal, product, and engineering to define practical patterns that could be built centrally and scale.",
+        "Established shared guidance so teams could implement consistently across experiences and channels."
       ],
-      "images": [],
+      "images": [
+        {
+          "src": "assets/case-studies/fcc-labels/placeholder-1.svg",
+          "alt": "Placeholder wireframe of the plan selection screen",
+          "caption": "Base requirements from FCC for the \"nutrition label\""
+        },
+        {
+          "src": "assets/case-studies/fcc-labels/placeholder-2.svg",
+          "alt": "Placeholder diagram of the customer flow",
+          "caption": "Going wide with lots of different concepts for how to display labels for plans."
+        },
+        {
+          "src": "assets/case-studies/fcc-labels/placeholder-3.svg",
+          "alt": "Placeholder wireframe of the mobile plan detail screen",
+          "caption": "Narrowing down to a handful of concepts that will meet legal requirements and work from an experience standpoint"
+        },
+        {
+          "src": "assets/case-studies/fcc-labels/placeholder-4.svg",
+          "alt": "Placeholder layout comparing plan options side by side",
+          "caption": "Then we tested with customers for comprehension and as part of the experience of buying plans."
+        },
+        {
+          "src": "assets/case-studies/fcc-labels/placeholder-5.svg",
+          "alt": "Placeholder layout comparing plan options side by side",
+          "caption": "Ultimately settling on this approach."
+        }
+      ],
       "decisions": [
         {
           "title": "Standardize the patterns of how the label could display",
-          "detail": "Created reusable label components and placement rules to avoid fragmented experiences."
+          "detail": "Created reusable label components and placement rules to have a standardized experience across business units and channels."
         },
         {
-          "title": "Balance compliance with readability",
-          "detail": "Structured disclosure hierarchy so required information remained clear without overwhelming primary tasks."
+          "title": "Balance compliance with minimizing the experience impact",
+          "detail": "Present the mandated information in alignment with the requirements. But don't overwhelm or confuse the user, in what is already an experience with a high cognitive load"
         }
       ],
       "outcomes": [
-        "Enabled consistent compliance implementation across mobile and home experiences.",
+        "Enabled consistent compliance implementation across business units and channels in mobile and home experiences.",
         "Reduced design and engineering ambiguity through shared patterns and guidance.",
         "Maintained customer comprehension while meeting mandated requirements."
       ],
-      "reflection": "Regulatory initiatives can strengthen experience quality when teams treat compliance as a design systems challenge, not only a legal task."
+      "reflection": "Provided a model and guide for legal mandate projects of similar scope. (All-in pricing mandate for Massachucetts)"
     },
-    "journey": {
-      "title": "End-to-End Mobile Plan Journey",
-      "subtitle": "Shaping the full consumer journey while elevating design quality, team process, and delivery confidence.",
+    "satellite-to-device": {
+      "title": "Satellite to Device Experience",
+      "subtitle": "Building the experience strategy and cross-functional partnerships behind Verizon's Satellite to Device network capability.",
       "role": "Principal Experience Designer",
-      "timeline": "2024-Present",
-      "context": "As principal designer, scope expanded to end-to-end consumer activities related to mobile plans and adjacent service touchpoints.",
-      "problem": "Teams needed stronger shared direction, clearer design rationale, and higher consistency while shipping across complex constraints.",
+      "timeline": "2026-Present",
+      "context": "Verizon's strategic ambition is to eliminate coverage dead zones and offer customers seamless connectivity through Satellite to Device — matching competitor offerings while protecting Verizon's network superiority and earning the right to claim near-full USA satellite coverage.",
+      "problem": "The initiative required alignment across teams that had no prior working relationship, plus an experience and research strategy for the beta launch — all while translating a broad network capability into a clear customer offering.",
       "approach": [
-        "Combined insight gathering with hands-on design work to keep strategy grounded in real user and business signals.",
-        "Facilitated cross-disciplinary problem-solving sessions that surfaced blockers and clarified decisions.",
-        "Mentored designers and partners on design-led process, critique quality, and best-practice usage of shared systems."
+        "Created experience overview decks and hosted workshops to align business partners on the offering and where it's headed.",
+        "Brought in Value Proposition and CMI research early to shape the beta data collection journey ahead of launch.",
+        "Built a working relationship with Experience Management from the ground up, establishing mutual trust and a shared way of working."
       ],
-      "images": [],
-      "decisions": [
+      "images": [
         {
-          "title": "Elevate decision transparency",
-          "detail": "Made user, business, and technical reasoning explicit in critiques and stakeholder conversations."
+          "src": "assets/case-studies/satellite-to-device/placeholder-1.svg",
+          "alt": "Placeholder diagram of satellite coverage concept",
+          "caption": "Placeholder — coverage concept diagram"
         },
         {
-          "title": "Invest in team capability",
-          "detail": "Focused on coaching and operating rhythm so teams could make better decisions independently over time."
+          "src": "assets/case-studies/satellite-to-device/placeholder-2.svg",
+          "alt": "Placeholder wireframe of beta onboarding flow",
+          "caption": "Placeholder — beta onboarding wireframe"
+        },
+        {
+          "src": "assets/case-studies/satellite-to-device/placeholder-3.svg",
+          "alt": "Placeholder board from a partner alignment workshop",
+          "caption": "Placeholder — partner alignment workshop board"
+        },
+        {
+          "src": "assets/case-studies/satellite-to-device/placeholder-4.svg",
+          "alt": "Placeholder excerpt from an experience overview deck",
+          "caption": "Placeholder — experience overview deck excerpt"
+        }
+      ],
+      "decisions": [
+        {
+          "title": "Lead with partnership before artifacts",
+          "detail": "Prioritized building trust with Experience Management before pushing solutions, turning a disconnected relationship into a functioning team."
+        },
+        {
+          "title": "Get research ahead of the Beta",
+          "detail": "Pulled CMI research in early rather than after launch, de-risking the data collection strategy before it was needed."
         }
       ],
       "outcomes": [
-        "Improved cross-functional alignment around project goals and expected outcomes.",
-        "Strengthened design process maturity through mentoring and shared best practices.",
-        "Helped teams remove impediments faster and maintain momentum on delivery."
+        "Formed a functioning, trusted cross-team partnership from scratch since February.",
+        "Delivered an experience overview deck, wireframes, rapid research request, and survey feedback to ground the beta.",
+        "Presented the offering and experience work to Richard Dalton and his direct reports."
       ],
-      "reflection": "Principal impact is not only in artifacts, but in the quality of decisions teams can repeatedly make together."
+      "reflection": "Being seen as a leader on this work came from how the partnerships were built, not just the artifacts delivered — trust and shared direction made everything downstream easier."
     }
   },
   "workingStyle": {

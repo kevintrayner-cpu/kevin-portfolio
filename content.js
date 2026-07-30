@@ -80,18 +80,6 @@ window.PORTFOLIO_CONTENT = {
         "href": "case-study.html?case=myplan"
       },
       {
-        "id": "fcc-labels",
-        "tag": "Platform",
-        "title": "FCC Product Labels Across Experiences",
-        "challenge": "Directed the design and implementation of FCC-mandated product labels across mobile and home product experiences.",
-        "bullets": [
-          "Role: Lead UX Designer transitioning into Principal leadership",
-          "Scope: Aligned legal requirements with product, design systems, and cross-channel customer journeys",
-          "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
-        ],
-        "href": "case-study.html?case=fcc-labels"
-      },
-      {
         "id": "journey",
         "tag": "Service Design",
         "title": "End-to-End Mobile Plan Journey",
@@ -102,6 +90,18 @@ window.PORTFOLIO_CONTENT = {
           "Impact: Stronger cross-functional alignment, clearer decision rationale, and more consistent execution"
         ],
         "href": "case-study.html?case=journey"
+      },
+      {
+        "id": "fcc-labels",
+        "tag": "Platform",
+        "title": "FCC Product Labels Across Experiences",
+        "challenge": "Directed the design and implementation of FCC-mandated product labels across mobile and home product experiences.",
+        "bullets": [
+          "Role: Lead UX Designer transitioning into Principal leadership",
+          "Scope: Aligned legal requirements with product, design systems, and cross-channel customer journeys",
+          "Impact: Delivered consistent compliance patterns at scale while preserving experience clarity"
+        ],
+        "href": "case-study.html?case=fcc-labels"
       }
     ]
   },
@@ -168,14 +168,14 @@ window.PORTFOLIO_CONTENT = {
       "context": "FCC-mandated product labels required coordinated implementation across mobile and home product experiences.",
       "problem": "The team needed to satisfy compliance requirements while preserving usability, consistency, and trust across multiple channels.",
       "approach": [
-        "Mapped where label requirements intersected with existing product journeys and content systems.",
+        "Mapped where label requirements intersected with existing product journeys and content systems, across business units (incl Visible) and channels.",
         "Partnered closely with legal, product, and engineering to define practical patterns that could scale.",
-        "Established shared guidance so teams could implement consistently across surfaces."
+        "Established shared guidance so teams could implement consistently across experiences."
       ],
       "images": [],
       "decisions": [
         {
-          "title": "Standardize the label pattern",
+          "title": "Standardize the patterns of how the label could display",
           "detail": "Created reusable label components and placement rules to avoid fragmented experiences."
         },
         {

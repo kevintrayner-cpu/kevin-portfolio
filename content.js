@@ -232,22 +232,22 @@ window.PORTFOLIO_CONTENT = {
         {
           "src": "assets/case-studies/satellite-to-device/placeholder-1.svg",
           "alt": "Placeholder diagram of satellite coverage concept",
-          "caption": "Placeholder — coverage concept diagram"
+          "caption": "Early design storyboard and persona example"
         },
         {
           "src": "assets/case-studies/satellite-to-device/placeholder-2.svg",
           "alt": "Placeholder wireframe of beta onboarding flow",
-          "caption": "Placeholder — beta onboarding wireframe"
+          "caption": "Personas/segments representing customer base"
         },
         {
           "src": "assets/case-studies/satellite-to-device/placeholder-3.svg",
           "alt": "Placeholder board from a partner alignment workshop",
-          "caption": "Placeholder — partner alignment workshop board"
+          "caption": "Early journey map"
         },
         {
           "src": "assets/case-studies/satellite-to-device/placeholder-4.svg",
           "alt": "Placeholder excerpt from an experience overview deck",
-          "caption": "Placeholder — experience overview deck excerpt"
+          "caption": "Early concept wireframes for beta/onboarding site"
         }
       ],
       "decisions": [
@@ -265,11 +265,10 @@ window.PORTFOLIO_CONTENT = {
         }
       ],
       "outcomes": [
-        "Formed a functioning, trusted cross-team partnership from scratch since February.",
-        "Delivered an experience overview deck, wireframes, rapid research request, and survey feedback to ground the beta.",
-        "Presented the offering and experience work to Richard Dalton and his direct reports."
+        "Formed a functioning, trusted cross-team partnership with a group we work with frequently, and provided a working model going forward.",
+        "Being seen as a leader on this work came from how the partnerships were built, not just the artifacts delivered — trust and shared direction made everything downstream easier."
       ],
-      "reflection": "Being seen as a leader on this work came from how the partnerships were built, not just the artifacts delivered — trust and shared direction made everything downstream easier."
+      "reflection": "NOTE: This work was paused in 2026 due to organizational reorgs and reprioritization"
     }
   },
   "workingStyle": {

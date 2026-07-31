@@ -220,7 +220,7 @@ window.PORTFOLIO_CONTENT = {
       "title": "Satellite to Device Experience",
       "subtitle": "Building the experience strategy and cross-functional partnerships behind Verizon's Satellite to Device network capability.",
       "role": "Principal Experience Designer",
-      "timeline": "2026-Present",
+      "timeline": "",
       "context": "Verizon's strategic ambition is to eliminate coverage dead zones and offer customers seamless connectivity through Satellite to Device — matching competitor offerings while protecting Verizon's network superiority, and earning the right to claim near-full USA satellite coverage.",
       "problem": "The initiative required alignment across multiple teams, some of whom had no prior working relationship, plus a solid experience strategy, supported by research, for the beta and production launch — all while translating a broad network capability into a clear customer offering.",
       "approach": [

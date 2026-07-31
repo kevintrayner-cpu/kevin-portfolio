@@ -221,12 +221,12 @@ window.PORTFOLIO_CONTENT = {
       "subtitle": "Building the experience strategy and cross-functional partnerships behind Verizon's Satellite to Device network capability.",
       "role": "Principal Experience Designer",
       "timeline": "2026-Present",
-      "context": "Verizon's strategic ambition is to eliminate coverage dead zones and offer customers seamless connectivity through Satellite to Device — matching competitor offerings while protecting Verizon's network superiority and earning the right to claim near-full USA satellite coverage.",
-      "problem": "The initiative required alignment across teams that had no prior working relationship, plus an experience and research strategy for the beta launch — all while translating a broad network capability into a clear customer offering.",
+      "context": "Verizon's strategic ambition is to eliminate coverage dead zones and offer customers seamless connectivity through Satellite to Device — matching competitor offerings while protecting Verizon's network superiority, and earning the right to claim near-full USA satellite coverage.",
+      "problem": "The initiative required alignment across multiple teams, some of whom had no prior working relationship, plus a solid experience strategy, supported by research, for the beta and production launch — all while translating a broad network capability into a clear customer offering.",
       "approach": [
         "Created experience overview decks and hosted workshops to align business partners on the offering and where it's headed.",
         "Brought in Value Proposition and CMI research early to shape the beta data collection journey ahead of launch.",
-        "Built a working relationship with Experience Management from the ground up, establishing mutual trust and a shared way of working."
+        "Built a working relationship with Experience Management team from the ground up, establishing mutual trust and a shared way of working."
       ],
       "images": [
         {
@@ -256,8 +256,12 @@ window.PORTFOLIO_CONTENT = {
           "detail": "Prioritized building trust with Experience Management before pushing solutions, turning a disconnected relationship into a functioning team."
         },
         {
-          "title": "Get research ahead of the Beta",
-          "detail": "Pulled CMI research in early rather than after launch, de-risking the data collection strategy before it was needed."
+          "title": "Prioritizing and identifying the Beta launch as key to informing the strategy for release",
+          "detail": "This marked Verizon's first real foray into Satellite services beyond simple emergency services. We pulled in CMI research and the business teams to figure out the questions we needed to answer, how would we collect information, and how would we sell it to customers"
+        },
+        {
+          "title": "Clarifying key goals and supporting requirements",
+          "detail": "Defined what success looked like — matching competitor satellite-to-device offerings, creating clear customer benefit, and protecting Verizon's network superiority — and translated those goals into concrete experience requirements partners could design and build against."
         }
       ],
       "outcomes": [

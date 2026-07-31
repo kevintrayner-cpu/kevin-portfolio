@@ -252,16 +252,16 @@ window.PORTFOLIO_CONTENT = {
       ],
       "decisions": [
         {
+          "title": "Clarifying key goals and supporting requirements",
+          "detail": "Defined what success looked like — matching competitor satellite-to-device offerings, creating clear customer benefit, and protecting Verizon's network superiority — and translated those goals into concrete experience requirements partners could design and build against."
+        },
+        {
           "title": "Lead with partnership before artifacts",
           "detail": "Prioritized building trust with Experience Management before pushing solutions, turning a disconnected relationship into a functioning team."
         },
         {
           "title": "Prioritizing and identifying the Beta launch as key to informing the strategy for release",
           "detail": "This marked Verizon's first real foray into Satellite services beyond simple emergency services. We pulled in CMI research and the business teams to figure out the questions we needed to answer, how would we collect information, and how would we sell it to customers"
-        },
-        {
-          "title": "Clarifying key goals and supporting requirements",
-          "detail": "Defined what success looked like — matching competitor satellite-to-device offerings, creating clear customer benefit, and protecting Verizon's network superiority — and translated those goals into concrete experience requirements partners could design and build against."
         }
       ],
       "outcomes": [

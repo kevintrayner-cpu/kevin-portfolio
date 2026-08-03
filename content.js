@@ -248,6 +248,11 @@ window.PORTFOLIO_CONTENT = {
           "src": "assets/case-studies/satellite-to-device/placeholder-4.svg",
           "alt": "Placeholder excerpt from an experience overview deck",
           "caption": "Early concept wireframes for beta/onboarding site"
+        },
+        {
+          "src": "assets/case-studies/satellite-to-device/placeholder-5.svg",
+          "alt": "Placeholder excerpt from an experience overview deck",
+          "caption": "Service map snippet"
         }
       ],
       "decisions": [
@@ -268,7 +273,7 @@ window.PORTFOLIO_CONTENT = {
         "Formed a functioning, trusted cross-team partnership with a group we work with frequently, and provided a working model going forward.",
         "Being seen as a leader on this work came from how the partnerships were built, not just the artifacts delivered — trust and shared direction made everything downstream easier."
       ],
-      "reflection": "NOTE: This work was paused in 2026 due to organizational reorgs and reprioritization"
+      "reflection": "This work was paused in 2026 due to organizational reorgs and reprioritization"
     }
   },
   "workingStyle": {
@@ -316,13 +321,6 @@ window.PORTFOLIO_CONTENT = {
         "title": "Scale",
         "body": "I raise team capability by mentoring, recognizing growth, and building reusable practices that make cross-functional execution more resilient."
       }
-    ],
-    "process": [
-      "Sense",
-      "Frame",
-      "Co-Create",
-      "Prototype/Test",
-      "Enable"
     ],
     "collaborationNotes": [
       "I naturally spot growth potential in others and invest in mentorship and coaching.",

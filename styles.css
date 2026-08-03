@@ -376,8 +376,7 @@ h2 {
   background: #fff;
 }
 
-.leadership-grid article,
-.writing-list article {
+.leadership-grid article {
   border: 1px solid var(--line);
   background: rgba(255, 253, 250, 0.9);
   border-radius: 12px;
@@ -388,11 +387,6 @@ h2 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
-}
-
-.writing-list a {
-  color: var(--accent-deep);
-  font-weight: 700;
 }
 
 .testimonial-card {

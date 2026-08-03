@@ -182,31 +182,6 @@ function renderTestimonials() {
   `;
 }
 
-function renderWriting() {
-  const section = document.getElementById('writing');
-  if (!section) return;
-
-  section.innerHTML = `
-    <div class="section-head">
-      <p class="section-kicker" data-edit="writing.kicker">${escapeHtml(content.writing.kicker)}</p>
-      <h2 data-edit="writing.heading">${escapeHtml(content.writing.heading)}</h2>
-    </div>
-    <div class="writing-list">
-      ${content.writing.items
-        .map(
-          (item, index) => `
-          <article>
-            <h3 data-edit="writing.items[${index}].title">${escapeHtml(item.title)}</h3>
-            <p data-edit="writing.items[${index}].summary">${escapeHtml(item.summary)}</p>
-            <a href="${escapeHtml(item.href)}">View Item</a>
-          </article>
-        `
-        )
-        .join('')}
-    </div>
-  `;
-}
-
 function renderAboutPreview() {
   const section = document.getElementById('about');
   if (!section) return;
@@ -230,7 +205,6 @@ function init() {
   renderWork();
   renderWorkingStyle();
   renderTestimonials();
-  renderWriting();
   renderAboutPreview();
   renderContact();
   renderFooter();

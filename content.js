@@ -23,10 +23,6 @@ window.PORTFOLIO_CONTENT = {
       "href": "#working-style"
     },
     {
-      "label": "Writing",
-      "href": "#writing"
-    },
-    {
       "label": "Contact",
       "href": "#contact"
     }
@@ -334,27 +330,6 @@ window.PORTFOLIO_CONTENT = {
       "I gather broad context and evidence before decisions, then tailor what matters most for each stakeholder group.",
       "I use positivity and emotional awareness to maintain momentum during ambiguity and change.",
       "I intentionally watch for blind spots like overextending support or delaying necessary conflict."
-    ]
-  },
-  "writing": {
-    "kicker": "Writing + Talks",
-    "heading": "Thought leadership and speaking content can be added here as you publish it.",
-    "items": [
-      {
-        "title": "How I Frame Ambiguous Product Problems",
-        "summary": "A practical approach to moving teams from open questions to decision-ready direction.",
-        "href": "#"
-      },
-      {
-        "title": "Designing Within Business and Technical Constraints",
-        "summary": "Methods for maintaining design quality while working with revenue models and platform realities.",
-        "href": "#"
-      },
-      {
-        "title": "Mentoring for Better Cross-Functional Decisions",
-        "summary": "How coaching design craft and process improves Product and Engineering collaboration.",
-        "href": "#"
-      }
     ]
   },
   "testimonials": [

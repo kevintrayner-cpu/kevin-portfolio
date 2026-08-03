@@ -334,12 +334,12 @@ window.PORTFOLIO_CONTENT = {
   },
   "testimonials": [
     {
-      "quote": "Kevin creates shared clarity in high-ambiguity programs and helps teams make decisions that stick.",
-      "attribution": "Product Partner"
+      "quote": "I had the pleasure of working closely with Kevin on various sales-driving projects during his time at Verizon, and he is a standout team player who showed up for any challenge with a positive attitude. Kevin brings a strong and proactive problem-solving mindset to everything he takes on. He's extremely detail-oriented and thorough in his discovery throughout his creation process. When contributing to complex initiatives and collaborating across teams, Kevin always makes an immediate positive impact on both project progress and working team culture. Any organization would be lucky to have Kevin on their team!",
+      "attribution": "Ali Maidment, Director Experience Management, Verizon (CX Partner)"
     },
     {
-      "quote": "He combines strategic systems thinking with practical delivery leadership. Teams move faster and with less churn.",
-      "attribution": "Engineering Partner"
+      "quote": "Kevin is an exemplary human; curious, supportive, and collaborative—traits that also happen to be critical to being a designer and design strategist. He always brought positive energy and attitude to help move work forward, and was good at productivity identifying challenges to be worked through. His early involvement in new strategic initiatives helped accelerate the path to market, and I always appreciated his partnership.",
+      "attribution": "Alexa Curtis, AVP-Experience Design, Verizon"
     }
   ],
   "aboutPreview": {

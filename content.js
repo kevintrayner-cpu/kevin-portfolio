@@ -308,8 +308,12 @@ window.PORTFOLIO_CONTENT = {
   },
   "testimonials": [
     {
-      "quote": "I had the pleasure of working closely with Kevin on various sales-driving projects during his time at Verizon, and he is a standout team player who showed up for any challenge with a positive attitude. Kevin brings a strong and proactive problem-solving mindset to everything he takes on. He's extremely detail-oriented and thorough in his discovery throughout his creation process. When contributing to complex initiatives and collaborating across teams, Kevin always makes an immediate positive impact on both project progress and working team culture. Any organization would be lucky to have Kevin on their team!",
+      "quote": "I had the pleasure of working closely with Kevin on various sales-driving projects during his time at Verizon, and he is a standout team player who showed up for any challenge with a positive attitude. Kevin brings a strong and proactive problem-solving mindset to everything he takes on. He's extremely detail-oriented and thorough in his discovery throughout his creation process. When contributing to complex initiatives and collaborating across teams, Kevin always makes an immediate positive impact on both project progress and working team culture.",
       "attribution": "Ali Maidment, Director Experience Management, Verizon (CX Partner)"
+    },
+    {
+      "quote": "Over several years and numerous projects, I have consistently valued having Kevin on my project teams. He routinely exceeds expectations, taking care not only to excel in his own responsibilities but also to develop a comprehensive understanding of each project’s broader goal. Kevin is a huge asset to any working team and companies should be knocking down his door to snatch him up.",
+      "attribution": "Megan Gottfried, Product Development/Sr Mgr, Verizon"
     },
     {
       "quote": "Kevin is an exemplary human; curious, supportive, and collaborative—traits that also happen to be critical to being a designer and design strategist. He always brought positive energy and attitude to help move work forward, and was good at productivity identifying challenges to be worked through. His early involvement in new strategic initiatives helped accelerate the path to market, and I always appreciated his partnership.",

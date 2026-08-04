@@ -339,8 +339,10 @@ h2 {
 }
 
 .testimonial-card {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 0.8rem;
+  height: 100%;
 }
 
 .testimonial-quote {
@@ -350,6 +352,7 @@ h2 {
 
 .testimonial-attribution {
   margin: 0;
+  margin-top: auto;
   color: var(--muted);
   font-size: 0.9rem;
 }

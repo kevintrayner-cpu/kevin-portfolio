@@ -10,7 +10,6 @@ function renderHero() {
       <a class="btn btn-primary" href="${escapeHtml(content.hero.primaryCta.href)}" data-edit="hero.primaryCta.label">${escapeHtml(content.hero.primaryCta.label)}</a>
       <a class="btn btn-text" href="${escapeHtml(content.hero.secondaryCta.href)}" data-edit="hero.secondaryCta.label">${escapeHtml(content.hero.secondaryCta.label)}</a>
     </div>
-    <div class="hero-signal" role="note" aria-label="Positioning signal for hiring managers" data-edit="hero.signal">${escapeHtml(content.hero.signal)}</div>
   `;
 }
 

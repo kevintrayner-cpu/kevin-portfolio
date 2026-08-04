@@ -29,8 +29,8 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "Product + Experience Leadership",
-    "headline": "I lead strategic design programs that improve customers' lives.",
-    "subhead": "Principal Experience Designer with 20+ years of experience designing customer and internal experiences for Fortune 100 organizations.",
+    "headline": "I lead strategic design projects that improve customers' lives.",
+    "subhead": "Principal Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations — most recently Principal-level leadership at Verizon Consumer Group across strategy, cross-functional delivery, and design maturity.",
     "primaryCta": {
       "label": "View Case Studies",
       "href": "#work"
@@ -38,8 +38,7 @@ window.PORTFOLIO_CONTENT = {
     "secondaryCta": {
       "label": "Book a Conversation",
       "href": "#contact"
-    },
-    "signal": "Hiring Snapshot: Principal-level leadership at Verizon Consumer Group across mobile plan strategy, cross-functional delivery, and design maturity."
+    }
   },
   "proofStats": [
     {
@@ -355,6 +354,6 @@ window.PORTFOLIO_CONTENT = {
   },
   "footer": {
     "left": "Kevin Trayner",
-    "right": "Principal Experience Designer"
+    "right": "Strategic Design Leader"
   }
 };

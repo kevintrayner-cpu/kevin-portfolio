@@ -47,7 +47,7 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "myplan",
         "tag": "Growth",
-        "title": "Mobile myPlan Experience",
+        "title": "myPlan Experience",
         "challenge": "Led design for myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
           "Role: Lead UX Designer",
@@ -84,8 +84,8 @@ window.PORTFOLIO_CONTENT = {
   },
   "caseStudies": {
     "myplan": {
-      "title": "Mobile myPlan Experience",
-      "subtitle": "Reframing mobile plan selection to give customers more flexibility while supporting business differentiation.",
+      "title": "myPlan Experience",
+      "subtitle": "Reframing plan selection to give customers more flexibility while supporting business differentiation.",
       "role": "Lead UX Designer",
       "timeline": "",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",

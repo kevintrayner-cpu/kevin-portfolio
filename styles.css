@@ -221,7 +221,10 @@ h2 {
 
 .strengths-title {
   margin: 0 0 0.65rem;
-  color: var(--muted);
+  color: var(--accent-deep);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.72rem;
   font-weight: 700;
 }
 

@@ -317,13 +317,9 @@ window.PORTFOLIO_CONTENT = {
     },
     {
       "quote": "Kevin is an exemplary human; curious, supportive, and collaborative—traits that also happen to be critical to being a designer and design strategist. He always brought positive energy and attitude to help move work forward, and was good at productivity identifying challenges to be worked through. His early involvement in new strategic initiatives helped accelerate the path to market, and I always appreciated his partnership.",
-      "attribution": "Alexa Curtis, AVP-Experience Design, Verizon"
+      "attribution": "Alexa Curtis, Associate VP - Experience Design, Verizon"
     }
   ],
-  "aboutPreview": {
-    "kicker": "About",
-    "body": "I am a Principal Experience Designer at Verizon Consumer Group and a UX leader with 20+ years of experience. I design end-to-end customer and internal experiences, partner across technical and business teams, and translate user journeys into practical, high-quality solutions that support business outcomes."
-  },
   "contact": {
     "kicker": "Contact",
     "heading": "Building an experience? Let's make it a story worth telling.",

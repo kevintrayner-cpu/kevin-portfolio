@@ -154,21 +154,6 @@ function renderTestimonials() {
   `;
 }
 
-function renderAboutPreview() {
-  const section = document.getElementById('about');
-  if (!section) return;
-
-  section.innerHTML = `
-    <div class="section-head">
-      <p class="section-kicker" data-edit="aboutPreview.kicker">${escapeHtml(content.aboutPreview.kicker)}</p>
-      <h2>Principal-level perspective on product and experience leadership.</h2>
-    </div>
-    <article class="about-card">
-      <p data-edit="aboutPreview.body">${escapeHtml(content.aboutPreview.body)}</p>
-    </article>
-  `;
-}
-
 function init() {
   applySeo(content.seo.title, content.seo.description, content.seo.ogTitle, content.seo.ogDescription);
   renderHeader();
@@ -176,7 +161,6 @@ function init() {
   renderWork();
   renderWorkingStyle();
   renderTestimonials();
-  renderAboutPreview();
   renderContact();
   renderFooter();
   setupReveal();

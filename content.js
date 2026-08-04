@@ -40,24 +40,6 @@ window.PORTFOLIO_CONTENT = {
       "href": "#contact"
     }
   },
-  "proofStats": [
-    {
-      "metric": "20+ Years",
-      "label": "Experience"
-    },
-    {
-      "metric": "Fortune 100",
-      "label": "Enterprise Context"
-    },
-    {
-      "metric": "2024-Present",
-      "label": "Principal Scope at Verizon"
-    },
-    {
-      "metric": "Mobile",
-      "label": "Product Portfolio Focus"
-    }
-  ],
   "work": {
     "kicker": "Selected Work",
     "heading": "Three flagship programs demonstrating strategic framing, cross-functional leadership, and measurable outcomes.",

@@ -13,22 +13,6 @@ function renderHero() {
   `;
 }
 
-function renderProofBar() {
-  const proofBar = document.getElementById('proof-bar');
-  if (!proofBar) return;
-
-  proofBar.innerHTML = content.proofStats
-    .map(
-      (item, index) => `
-      <article>
-        <p class="metric" data-edit="proofStats[${index}].metric">${escapeHtml(item.metric)}</p>
-        <p class="label" data-edit="proofStats[${index}].label">${escapeHtml(item.label)}</p>
-      </article>
-    `
-    )
-    .join('');
-}
-
 function renderWork() {
   const work = document.getElementById('work');
   if (!work) return;
@@ -200,7 +184,6 @@ function init() {
   applySeo(content.seo.title, content.seo.description, content.seo.ogTitle, content.seo.ogDescription);
   renderHeader();
   renderHero();
-  renderProofBar();
   renderWork();
   renderWorkingStyle();
   renderTestimonials();

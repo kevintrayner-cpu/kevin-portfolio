@@ -29,7 +29,7 @@ window.PORTFOLIO_CONTENT = {
   ],
   "hero": {
     "eyebrow": "Product + Experience Leadership",
-    "headline": "I lead strategic design projects that improve customers' lives.",
+    "headline": "Designing intuitive digital experiences for complex problems. I bridge the gap between user needs, business strategy, and clean implementation.",
     "subhead": "Principal Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations — most recently Principal-level leadership at Verizon Consumer Group across strategy, cross-functional delivery, and design maturity.",
     "primaryCta": {
       "label": "View Case Studies",

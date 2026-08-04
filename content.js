@@ -299,13 +299,6 @@ window.PORTFOLIO_CONTENT = {
         "body": "I raise team capability by mentoring, recognizing growth, and building reusable practices that make cross-functional execution more resilient."
       }
     ],
-    "process": [
-      "Sense",
-      "Frame",
-      "Co-Create",
-      "Prototype/Test",
-      "Enable"
-    ],
     "collaborationNotes": [
       "I naturally spot growth potential in others and invest in mentorship and coaching.",
       "I gather broad context and evidence before decisions, then tailor what matters most for each stakeholder group.",

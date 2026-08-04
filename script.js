@@ -99,6 +99,7 @@ function renderWorkingStyle() {
     </div>`
         : ''
     }
+    <h3 class="working-style-subhead">How This Shows Up In My Process</h3>
     <div class="leadership-grid leadership-grid-4">
       ${content.workingStyle.pillars
         .map(
@@ -113,8 +114,8 @@ function renderWorkingStyle() {
     </div>
     ${
       collaborationNotes.length
-        ? `<div class="working-notes">
-      <h3>How This Shows Up In Collaboration</h3>
+        ? `<h3 class="working-style-subhead">How This Shows Up In Collaboration</h3>
+    <div class="working-notes">
       <ul>
         ${collaborationNotes
           .map(
@@ -126,18 +127,6 @@ function renderWorkingStyle() {
     </div>`
         : ''
     }
-    <div class="process-strip" aria-label="Process snapshot">
-      ${content.workingStyle.process
-        .map(
-          (step, index) => `
-          <div class="process-step">
-            <span class="process-number">${index + 1}</span>
-            <p data-edit="workingStyle.process[${index}]">${escapeHtml(step)}</p>
-          </div>
-        `
-        )
-        .join('')}
-    </div>
   `;
 }
 

@@ -134,6 +134,9 @@ function renderTestimonials() {
   const section = document.getElementById('testimonials');
   if (!section) return;
 
+  const VISIBLE_COUNT = 3;
+  const hasMore = content.testimonials.length > VISIBLE_COUNT;
+
   section.innerHTML = `
     <div class="section-head">
       <p class="section-kicker">Partner Feedback</p>
@@ -143,7 +146,9 @@ function renderTestimonials() {
       ${content.testimonials
         .map(
           (item, index) => `
-          <article class="testimonial-card">
+          <article class="testimonial-card${index >= VISIBLE_COUNT ? ' testimonial-extra' : ''}"${
+            index >= VISIBLE_COUNT ? ' hidden' : ''
+          }>
             <p class="testimonial-quote" data-edit="testimonials[${index}].quote">${escapeHtml(item.quote)}</p>
             <p class="testimonial-attribution" data-edit="testimonials[${index}].attribution">${escapeHtml(item.attribution)}</p>
           </article>
@@ -151,7 +156,29 @@ function renderTestimonials() {
         )
         .join('')}
     </div>
+    ${
+      hasMore
+        ? `<div class="testimonials-toggle-wrap"><button type="button" class="btn btn-ghost testimonials-toggle" id="testimonials-toggle">Show more feedback</button></div>`
+        : ''
+    }
   `;
+
+  const toggleButton = document.getElementById('testimonials-toggle');
+  if (toggleButton) {
+    toggleButton.addEventListener('click', () => {
+      const extras = section.querySelectorAll('.testimonial-extra');
+      const expanded = toggleButton.getAttribute('aria-expanded') === 'true';
+      extras.forEach((el) => {
+        if (expanded) {
+          el.setAttribute('hidden', '');
+        } else {
+          el.removeAttribute('hidden');
+        }
+      });
+      toggleButton.setAttribute('aria-expanded', String(!expanded));
+      toggleButton.textContent = expanded ? 'Show more feedback' : 'Show less';
+    });
+  }
 }
 
 function init() {

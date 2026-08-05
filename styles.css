@@ -171,6 +171,18 @@ h2 {
   color: var(--ink);
 }
 
+.testimonials-toggle-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.6rem;
+}
+
+.testimonials-toggle {
+  font-family: inherit;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
 .section {
   padding: 3rem 0;
 }
@@ -343,6 +355,10 @@ h2 {
   flex-direction: column;
   gap: 0.8rem;
   height: 100%;
+}
+
+.testimonial-card[hidden] {
+  display: none;
 }
 
 .testimonial-quote {

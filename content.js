@@ -30,7 +30,7 @@ window.PORTFOLIO_CONTENT = {
   "hero": {
     "eyebrow": "Product + Experience Leadership",
     "headline": "Designing intuitive solutions for complex problems—from user strategy through execution.",
-    "subhead": "Principal Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations — most recently Principal-level leadership at Verizon Consumer Group across strategy, cross-functional delivery, and design maturity.",
+    "subhead": "Strategic Experience Designer with 20+ years leading customer and internal experiences for Fortune 100 organizations — most recently Principal-level leadership at Verizon Consumer Group across strategy, cross-functional delivery, and design maturity.",
     "primaryCta": {
       "label": "View Case Studies",
       "href": "#work"
@@ -47,7 +47,7 @@ window.PORTFOLIO_CONTENT = {
       {
         "id": "myplan",
         "tag": "Growth",
-        "title": "myPlan Experience",
+        "title": "Mobile myPlan Experience",
         "challenge": "Led design for myPlan initiative to create clearer plan choice and more customer flexibility in a highly competitive market.",
         "bullets": [
           "Role: Lead UX Designer",
@@ -84,8 +84,8 @@ window.PORTFOLIO_CONTENT = {
   },
   "caseStudies": {
     "myplan": {
-      "title": "myPlan Experience",
-      "subtitle": "Reframing plan selection to give customers more flexibility while supporting business differentiation.",
+      "title": "Mobile myPlan Experience",
+      "subtitle": "Reframing mobile plan selection to give customers more flexibility while supporting business differentiation.",
       "role": "Lead UX Designer",
       "timeline": "",
       "context": "Verizon needed a clearer and more competitive plan experience for consumers that was a differentiator.",
@@ -312,12 +312,20 @@ window.PORTFOLIO_CONTENT = {
       "attribution": "Ali Maidment, Director Experience Management, Verizon (CX Partner)"
     },
     {
-      "quote": "Over several years and numerous projects, I have consistently valued having Kevin on my project teams. He routinely exceeds expectations, taking care not only to excel in his own responsibilities but also to develop a comprehensive understanding of each project’s broader goal. Kevin is a huge asset to any working team and companies should be knocking down his door to snatch him up.",
-      "attribution": "Megan Gottfried, Product Development/Sr Mgr, Verizon"
+      "quote": "Kevin was an absolute cornerstone of our team during our nearly 10 years working together at Verizon. As a Principal Designer, his strength lies in his holistic approach to product development. He can design wireframes and interfaces with the best of them, but more importantly, he understands the end-to-end product architecture and how business logic directly shapes the end-user experience. On top of his incredible design talent, Kevin is an outstanding communicator and collaborator who bridges the gap effortlessly between design, business, and tech stakeholders. He brings clarity, strong problem-solving, and continuous positivity to every effort. I’d jump at the chance to work with Kevin again!",
+      "attribution": "Travis Roberts, Principal UX/UI Designer and Illustrator, Verizon"
     },
     {
       "quote": "Kevin is an exemplary human; curious, supportive, and collaborative—traits that also happen to be critical to being a designer and design strategist. He always brought positive energy and attitude to help move work forward, and was good at productivity identifying challenges to be worked through. His early involvement in new strategic initiatives helped accelerate the path to market, and I always appreciated his partnership.",
       "attribution": "Alexa Curtis, Associate VP - Experience Design, Verizon"
+    },
+    {
+      "quote": "Over several years and numerous projects, I have consistently valued having Kevin on my project teams. He routinely exceeds expectations, taking care not only to excel in his own responsibilities but also to develop a comprehensive understanding of each project’s broader goal. Kevin is a huge asset to any working team and companies should be knocking down his door to snatch him up.",
+      "attribution": "Megan Gottfried, Product Development/Sr Mgr, Verizon"
+    }, 
+    {
+      "quote": "I value our collaborative working relationship and appreciate your meticulous approach to project scenarios, which consistently leads to optimal customer experiences. I have personally gained significant knowledge from you over the past year. I thank you for your patience.and I look forward to working together more in the future.",
+      "attribution": "Jeanette Hogan,Experience Management-Sr Mgr, Verizon"
     }
   ],
   "contact": {
